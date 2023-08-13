@@ -8,7 +8,6 @@ The Snake Game is a classic arcade game where the player controls a snake that m
 - Keyboard Input: JavaScript captures keyboard inputs to control the snake's movement.
 
 ## Tech Stack
-- Flask
 - HTML
 - CSS
 - JavaScript
