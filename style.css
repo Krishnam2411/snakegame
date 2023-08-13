@@ -1,0 +1,78 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(108, 134, 93, 0.77);
+    font-family: "Marker Felt", cursive;
+    filter: brightness(80%);
+}
+#window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 4em;
+}
+#board{
+    background-color: whitesmoke;
+    border: 5px solid black;
+    cursor: none;
+}
+#score{
+    margin: 1em 0 0 0;
+    font-size: 1.2rem;
+}
+.screen{
+    display: grid;
+    place-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+.Button{
+    font-family: "Marker Felt", cursive;
+    font-size: 2em;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 0.4em;
+    margin: 1em auto;
+    background-color: whitesmoke;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+}
+.animate{
+    margin: 0.5em 0;
+    animation: textAnimation ease-in-out 2s infinite alternate;
+}
+.screenMessage{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+.big{
+    font-size: 5em;
+}
+.highlight{
+    color: rgba(101, 255, 27);
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
